@@ -7,13 +7,13 @@ import hidden
 
 BASE_URL = 'https://api.twitter.com/'
 
-def main(username: str) -> dict:
+def main(username: str, bearer_token: str) -> dict:
     '''
     Return a dict where is information about user's friends:
     key - username of friend
     value - location of friend
     '''
-    bearer_token = hidden.oauth()
+
     search_url = f'{BASE_URL}1.1/friends/list.json'
 
     search_headers = {

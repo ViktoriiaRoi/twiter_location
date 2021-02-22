@@ -12,10 +12,12 @@ def index():
 @app.route("/find_location", methods=["POST"])
 def find_location():
     username = request.form.get("username")
-    if not username:
+    bearer = request.form.get("bearer")
+
+    if not username or not bearer:
         return render_template("empty.html")
     
-    friends_location = location.main(username)
+    friends_location = location.main(username, bearer)
     if not friends_location:
         return render_template("failure.html")
 
