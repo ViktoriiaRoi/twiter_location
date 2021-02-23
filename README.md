@@ -22,5 +22,5 @@ This application give an opportunity to see a location of user's friends on Twit
 * Friends_map.html - are generated and shown when user tap a button (if there aren't any errors)
 
 ## Example of working program
-![map1](https://user-images.githubusercontent.com/44781809/108779682-ea709b00-756f-11eb-8055-1e1020d24953.jpg)
+![map1](https://user-images.githubusercontent.com/44781809/108857822-277e7100-75f4-11eb-8fd8-c069b846b3ad.jpg)
 ![map2](https://user-images.githubusercontent.com/44781809/108752342-02cebe80-754c-11eb-8086-262bb716e26c.jpg)
