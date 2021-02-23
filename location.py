@@ -3,7 +3,6 @@ This module triggers a get request to Twitter API
 Find name and location of user friends
 '''
 import requests
-import hidden
 
 BASE_URL = 'https://api.twitter.com/'
 
