@@ -21,8 +21,8 @@ def find_location():
         return render_template("failure.html")
 
     
-    build_map.main(friends_location)
-    return render_template("Friends_map.html")
+    map = build_map.main(friends_location)
+    return map._repr_html_()
 
 if __name__ == '__main__':
     app.run(debug=True)

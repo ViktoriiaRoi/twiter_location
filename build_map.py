@@ -39,7 +39,7 @@ def build_map(coordinates:dict):
     friends_map = folium.Map()
     friends_map.add_child(friends_marks)
     friends_map.add_child(folium.LayerControl())
-    friends_map.save("templates/Friends_map.html")
+    return friends_map
 
 
 def main(locations: dict):
@@ -51,4 +51,5 @@ def main(locations: dict):
         user_coord = find_coordinates(locations[key])
         if user_coord:
             coordinates[key] = user_coord
-    build_map(coordinates)
+    map = build_map(coordinates)
+    return map
