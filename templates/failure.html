@@ -1,5 +1,14 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<h2>User with this name not exist or haven't any friends with location!</h2>
+<h1>Something went wrong...</h1>
+<h2>These are possible mistakes:</h2>
+<div style="text-align: left; margin: auto;">
+    <ul style="font-size: 20px;">
+        <li>User with this name doesn't exist</li>
+        <li>User has no friends with location</li>
+        <li>Bearer token is wrong</li>
+    </ul>
+</div>
+
 {% endblock %}
