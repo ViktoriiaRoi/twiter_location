@@ -34,6 +34,6 @@ def main(username: str, bearer_token: str) -> dict:
     for user in users_info:
         loc = user['location']
         if loc:
-            friends_location[user['name']] = loc
+            friends_location[user['screen_name']] = loc
 
     return friends_location
